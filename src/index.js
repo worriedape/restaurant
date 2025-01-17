@@ -1,17 +1,18 @@
 import "./styles.css";
 
-import odinImage from "./logo-bananas.svg";
+import banana from "./logo-bananas.svg";
+
+const nav = document.getElementById("nav");
 
 const image = document.createElement("img");
-image.src = odinImage;
+image.classList.add("banana")
+image.src = banana;
 
-document.body.appendChild(image);
-
-
+nav.parentNode.insertBefore(image, nav);
 
 const contentwWrapper = document.getElementById("content");
 
 const button = document.createElement("button");
-button.textContent = "Click me!";
-button.classList.add("my-button");
+button.textContent = "Menu";
+button.classList.add("menu");
 contentwWrapper.appendChild(button);

@@ -1,3 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Yusei Magic";
+  background-color: rgb(255, 252, 241);
+}
+
 body {
-  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  background-size: 32px 32px;
+  background-image: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.05) 1px, transparent 1px);
+}
+
+header {
+  display: flex;
+  justify-self: center;
+  padding: 0.4rem 1rem;
+  width: 100%;
+  max-width: 960px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  .banana {
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+button {
+  padding: 2px 16px;
+  border: none;
+  border-bottom: 1px solid grey;
+  color: rgb(71, 71, 71);
+  &:hover {
+    border-radius: 16px;
+    background: rgb(255, 238, 0);
+    color: rgb(139, 38, 13);
+  }
+}
+
+#content {
+  padding: 1rem 4rem;
+  max-width: 60ch;
+  justify-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(99, 99, 99);
+  &::selection {
+    background: rgb(233, 6, 157);
+    color: rgb(255, 255, 255);
+  }
 }
