@@ -129,4 +129,3 @@ export function displayMenu() {
     gridContainer.appendChild(card);
   });
 }
-
